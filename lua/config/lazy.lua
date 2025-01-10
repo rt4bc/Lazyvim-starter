@@ -22,7 +22,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({  --setup 是 lazy.nvim 插件提供的一个方法，用于配置和初始化插件管理器的设置。它接受一个表（table）作为参数，表中可以包含多个配置选项，这些选项会影响插件的加载行为、插件列表等。
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" }, -- https://github.com/LazyVim/LazyVim/tree/main 
+                                                       -- LazyVim 是一个 Neovim 配置框架，旨在为用户提供一个快速、易于定制的基础配置，并使用 Lua 脚本来管理插件和设置。
     -- import/override with your plugins
     { import = "plugins" },
   },
